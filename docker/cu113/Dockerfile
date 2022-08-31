@@ -1,6 +1,7 @@
 FROM nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
 
 ENV LANG C.UTF-8
+ENV OFED_VERSION=5.3-1.0.0.1
 
 # https://github.com/dptech-corp/Uni-Core/blob/main/docker/cu116/Dockerfile
 RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
