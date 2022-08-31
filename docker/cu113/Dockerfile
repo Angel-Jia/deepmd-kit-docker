@@ -100,7 +100,7 @@ RUN ldconfig
 # tensorflow
 # ------------------------------------------------------------------
 
-RUN conda install -y numpy pyyaml scipy ipython ninja cython typing pandas && \
+RUN conda install -y numpy pyyaml scipy ipython ninja cython typing pandas pip && \
     conda clean -ya
 pip install tensorflow-gpu==2.6 && rm -r ~/.cache/pip
 
